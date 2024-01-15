@@ -26,6 +26,11 @@ function Login() {
           console.log('Login successful');
           toast.success('Login successful');
 
+          // sessionStorage.setItem('username', username);
+          // sessionStorage.setItem('password', password);
+          localStorage.setItem('username', username);
+          localStorage.setItem('password', password);
+
           // Redirect to dashboard
           navigate('/dashboard');
         } else {
