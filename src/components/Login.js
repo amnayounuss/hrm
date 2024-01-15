@@ -2,40 +2,39 @@ import React, { useState, useEffect } from 'react';
 import { Col, Form, Button, Row } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import records from './Records.json';
 import { useNavigate } from 'react-router-dom';
 
-
-// LOGIN AND LODOUT SETUP USING JSON FILE
-
-
+// fetch data from json server
 function Login() {
   const [username, usernameupdate] = useState('');
   const [password, passwordupdate] = useState('');
-  const [usernames, setUsernames] = useState([]);
-  const [passwords, setPasswords] = useState([]);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    setUsernames(records.users.map(user => user.username));
-    setPasswords(records.users.map(user => user.password));
-  }, []);
-
-  const ProceedLogin = (e) => {
+  const ProceedLogin = async (e) => {
     e.preventDefault();
     if (validate()) {
-      const isValidUser = usernames.includes(username);
-      const isValidPassword = passwords[usernames.indexOf(username)] === password;
+      try {
+        const response = await fetch("http://localhost:9000/users");
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const users = await response.json();
+        console.log(users); //To check if the data has been fetched from json file and show in console
+        const isValidUser = users.some(user => user.username === username && user.password === password);
 
-      if (isValidUser && isValidPassword) {
-        console.log('Login successful');
-        toast.success('Login successful');
-        navigate('/dashboard');
-       
-      }
-       else {
-        console.error('Invalid username or password');
-        toast.error('Invalid username or password');
+        if (isValidUser) {
+          console.log('Login successful');
+          toast.success('Login successful');
+
+          // Redirect to dashboard
+          navigate('/dashboard');
+        } else {
+          console.error('Invalid username or password');
+          toast.error('Invalid username or password');
+        }
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+        toast.error('Error fetching user data');
       }
     }
   };
