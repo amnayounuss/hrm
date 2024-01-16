@@ -1,0 +1,1 @@
+npx json-server --watch src/components/Records.json --port 9000

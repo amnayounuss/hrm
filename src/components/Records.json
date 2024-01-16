@@ -1,150 +1,328 @@
 {
-    "attendanceCards": [  
+  "attendanceCards": [
     {
-      
       "Title": "Total Employees",
-      "Text": "300", 
-      "fontColor": "#FFFFFF"
-      
+      "Text": "300",
+      "fontColor": "#FFFFFF",
+      "id": "066b"
     },
     {
       "Title": "Present",
-      "Text": "280", 
-      "fontColor": "#97C121"
+      "Text": "280",
+      "fontColor": "#97C121",
+      "id": "b5b1"
     },
     {
       "Title": "Absent",
-      "Text": "20", 
-      "fontColor": "#D63737"
+      "Text": "20",
+      "fontColor": "#D63737",
+      "id": "409b"
     },
     {
       "Title": "Late",
-      "Text": "86", 
-      "fontColor": "#FCC400"
+      "Text": "86",
+      "fontColor": "#FCC400",
+      "id": "3575"
     }
   ],
-  "request": 
-  [
-  {
-    "code": "(88431)",
-    "name": "Stephan",
-    "designation": "Mobile Apps Business Unit",
-    "date": "6/23/2023",
-    "type": "late",
-    "title": "Late",
-    "tickimage": "/tick.png",
-    "crossimage": "/cross.png"
+  "request": [
+    {
+      "code": "(88431)",
+      "name": "Stephan",
+      "designation": "Mobile Apps Business Unit",
+      "date": "6/23/2023",
+      "type": "late",
+      "title": "Late",
+      "tickimage": "/tick.png",
+      "crossimage": "/cross.png",
+      "id": "33e5"
+    },
+    {
+      "code": "(88431)",
+      "name": "Stephan",
+      "designation": "Mobile Apps Business Unit",
+      "date": "6/23/2023",
+      "type": "early",
+      "title": "Early",
+      "tickimage": "/tick.png",
+      "crossimage": "/cross.png",
+      "id": "0e2c"
+    },
+    {
+      "code": "(88431)",
+      "name": "Stephan",
+      "designation": "Mobile Apps Business Unit",
+      "date": "6/23/2023",
+      "type": "casual",
+      "title": "Casual Leave",
+      "tickimage": "/tick.png",
+      "crossimage": "/cross.png",
+      "id": "c8c3"
+    }
+  ],
+  "startpay": {
+    "text": "26th Aug"
   },
-  {
-    "code": "(88431)",
-    "name": "Stephan",
-    "designation": "Mobile Apps Business Unit",
-    "date": "6/23/2023",
-    "type": "early",
-    "title": "Early",
-    "tickimage": "/tick.png",
-    "crossimage": "/cross.png"
+  "endpay": {
+    "text": "25th Sep"
   },
-  {
-    "code": "(88431)",
-    "name": "Stephan",
-    "designation": "Mobile Apps Business Unit",
-    "date": "6/23/2023",
-    "type": "casual",
-    "title": "Casual Leave",
-    "tickimage": "/tick.png",
-    "crossimage": "/cross.png"
-  }],
-
-    "startpay":
+  "bitsimage": {
+    "img": "/bits.png"
+  },
+  "righbutton": {
+    "img": "/right click.png"
+  },
+  "leftbutton": {
+    "img": "/left click.png"
+  },
+  "department": {
+    "title": "BitsWits"
+  },
+  "monthlyAttendanceCards": [
     {
-        "text": "26th Aug"
+      "date": "30",
+      "day": "Mon",
+      "id": "a028"
     },
-    "endpay":
     {
-        "text": "25th Sep"
+      "date": "30",
+      "day": "Tue",
+      "id": "03a2"
     },
-    "bitsimage":
     {
-      "img": "/bits.png"
+      "date": "30",
+      "day": "Mon",
+      "id": "290c"
     },
-    "righbutton":
     {
-      "img": "/right click.png"
+      "date": "29",
+      "day": "Mon",
+      "id": "fe18"
     },
-    "leftbutton":
     {
-      "img": "/left click.png"
+      "date": "30",
+      "day": "Mon",
+      "id": "b766"
     },
-    "department":
     {
-      "title": "BitsWits"
+      "date": "30",
+      "day": "Mon",
+      "id": "223e"
     },
-    "monthlyAttendanceCards":[
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Tue" },
-      { "date": "30", "day": "Mon" },
-      { "date": "29", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" },
-      { "date": "30", "day": "Mon" }     
-      ],
-      "attendancebadgeData" : [
-        { "className": "green", "text": "Present" },
-        { "className": "yellow", "text": "Late" },
-        { "className": "purple", "text": "Early" },
-        { "className": "lightpurple", "text": "Half Day" },
-        { "className": "red", "text": "Absent" },
-        { "className": "orange", "text": "Short Day" },
-        { "className": "blue", "text": "Leave" },
-        { "className": "grey", "text": "Sch Days" },
-        { "className": "pink", "text": "Missing" },
-        { "className": "white", "text": "OFF" }
-      ],
-      "stackData" : [
-        { "className": "green", "count": "44", "label": "Present"},
-        { "className": "yellow", "count": "15", "label": "Late" },
-        { "className": "red", "count": "24", "label": "Absent"},
-        { "className": "blue", "count": "03", "label": "On Leave"}
-      ],
-      "users":[ {
-        "username": "admin",
-        "password": "123"
-      },
-      {
-        "username": "amna",
-        "password": "123"
-      },
-      {
-        "username": "adminNew",
-        "password": "123new"
-      }
-    ]
-      
-
-
-      
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "6749"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "0de8"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "2e00"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "cf0f"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "882a"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "72b1"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "1665"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "cf55"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "675e"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "f9f2"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "d145"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "082c"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "57e6"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "cc29"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "c1da"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "5051"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "311e"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "3002"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "223f"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "fbb6"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "ae3b"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "71ea"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "7ece"
+    },
+    {
+      "date": "30",
+      "day": "Mon",
+      "id": "a504"
+    }
+  ],
+  "attendancebadgeData": [
+    {
+      "className": "green",
+      "text": "Present",
+      "id": "ee2e"
+    },
+    {
+      "className": "yellow",
+      "text": "Late",
+      "id": "f5d0"
+    },
+    {
+      "className": "purple",
+      "text": "Early",
+      "id": "ad59"
+    },
+    {
+      "className": "lightpurple",
+      "text": "Half Day",
+      "id": "973b"
+    },
+    {
+      "className": "red",
+      "text": "Absent",
+      "id": "ac5b"
+    },
+    {
+      "className": "orange",
+      "text": "Short Day",
+      "id": "1124"
+    },
+    {
+      "className": "blue",
+      "text": "Leave",
+      "id": "de83"
+    },
+    {
+      "className": "grey",
+      "text": "Sch Days",
+      "id": "215d"
+    },
+    {
+      "className": "pink",
+      "text": "Missing",
+      "id": "4efe"
+    },
+    {
+      "className": "white",
+      "text": "OFF",
+      "id": "cf97"
+    }
+  ],
+  "stackData": [
+    {
+      "className": "green",
+      "count": "44",
+      "label": "Present",
+      "id": "f65d"
+    },
+    {
+      "className": "yellow",
+      "count": "15",
+      "label": "Late",
+      "id": "ad67"
+    },
+    {
+      "className": "red",
+      "count": "24",
+      "label": "Absent",
+      "id": "6222"
+    },
+    {
+      "className": "blue",
+      "count": "03",
+      "label": "On Leave",
+      "id": "5bb5"
+    }
+  ],
+  "users": [
+    {
+      "id": "8414",
+      "username": "adminbitswits",
+      "password": "bitswits123"
+    },
+    {
+      "id": "0d2a",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": "d448",
+      "username": "test",
+      "password": "test@123"
+    }
+  ]
 }

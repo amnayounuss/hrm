@@ -3,12 +3,24 @@ import { Col, Form, Button, Row } from 'react-bootstrap';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import { useCookies } from 'react-cookie';
+
 
 // fetch data from json server
 function Login() {
   const [username, usernameupdate] = useState('');
   const [password, passwordupdate] = useState('');
   const navigate = useNavigate();
+  const [cookies, setCookie] = useCookies(['isLoggedIn', 'username']);
+
+
+  useEffect(() => {
+    const isLoggedIn = cookies.isLoggedIn;
+    if (isLoggedIn === 'true') {
+      navigate('/dashboard');
+    }
+  }, [cookies, navigate]);
+  
 
   const ProceedLogin = async (e) => {
     e.preventDefault();
@@ -26,10 +38,16 @@ function Login() {
           console.log('Login successful');
           toast.success('Login successful');
 
-          // sessionStorage.setItem('username', username);
-          // sessionStorage.setItem('password', password);
-          localStorage.setItem('username', username);
-          localStorage.setItem('password', password);
+          // Set cookies
+          setCookie('isLoggedIn', 'true', { path: '/' });
+          setCookie('username', username, { path: '/' });
+
+          sessionStorage.setItem('Is Login True', isValidUser);
+          sessionStorage.getItem(isValidUser);
+
+
+          localStorage.setItem('Is Login True', isValidUser);
+          localStorage.getItem(isValidUser);
 
           // Redirect to dashboard
           navigate('/dashboard');

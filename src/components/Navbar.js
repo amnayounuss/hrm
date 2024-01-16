@@ -7,8 +7,12 @@ export function TopNav() {
   const navigate = useNavigate();
 
 
-  const handleLogout = () => {
+  const handleLogout = async function (){
+    
     navigate('/login');
+    sessionStorage.removeItem('Is Login True');
+    localStorage.removeItem('Is Login True');
+
   };
 
   return (
