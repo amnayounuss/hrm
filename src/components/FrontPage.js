@@ -12,9 +12,10 @@ function FrontPage() {
   return (
     <>
     <TopNav/>
-    <Row>
-        <SideNav/>
-        <Col>
+    <Row style={{width: '100%'}}>
+    <SideNav/>  
+
+        <Col >
         <AttendanceCards/>
         <AttendanceFlagSummary/>
         <RecentRequestandUnit/>

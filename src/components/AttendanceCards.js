@@ -6,8 +6,8 @@ function AttendanceCards() {
   
   return (   
     <>
-      <Row>
-        <CardGroup>
+      <Row >
+        <CardGroup className='mx-2'>
           {records.attendanceCards.map((attendanceCards, index) => (
             <Card 
             key={index} 

@@ -7,7 +7,7 @@ function RecentRequestandUnit() {
 
   return (
     <>
-    <Row  style={{width: '98%',display: 'flex', marginLeft: '1%'}}>
+    <Row className='mx-2' style={{width: '100%',display: 'flex'}}>
         <Col className='text-light bg-dark my-2' style={{ borderRadius: 8, marginRight: '1%' }}>
           <div className="p-2 mx-2 my-1 body-text">Recent Requests</div>
           <hr style={{ width: '100%', marginLeft: '0' }} />

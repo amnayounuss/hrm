@@ -26,7 +26,7 @@ function Login() {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch("http://localhost:9000/users");
+        const response = await fetch("http://localhost:9002/users");
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }

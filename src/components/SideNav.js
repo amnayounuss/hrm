@@ -8,7 +8,7 @@ export const SideNav = () => {
   };
 
   return (
-    <div className="bg-body-tertiary justify-content-between d-flex" data-bs-theme="dark" style={{ width: 220 }}>
+    <div className="bg-body-tertiary justify-content-between d-flex" data-bs-theme="dark" style={{ width: 200 }}>
       <Sidenav defaultOpenKeys={['3', '4']}>
         <Sidenav.Body>
           <Nav>

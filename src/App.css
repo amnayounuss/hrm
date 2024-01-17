@@ -362,3 +362,7 @@
   background-color: #A7A9AC;
   border-radius: 40px;
 }
+.CircularProgressbar .CircularProgressbar-path{
+    stroke: #97C121!important;
+    background-color: #0E0F12!important;
+}

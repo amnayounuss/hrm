@@ -6,26 +6,20 @@ import Circularprogress from './Circularprogress';
 function TimesheetsBirthdaysUsers() {
   return (
     <>
-    <Row  style={{width: '98%',display: 'flex', marginLeft: '1%'}}>
-        <Col className='text-light bg-dark my-2' style={{borderRadius: 8, marginRight: '1%'}}>
-            <Row>
-                <div className="p-2 body-text">Timesheet</div>
-                <hr style={{width: '93%', marginLeft:'2%' }}/>
-
-            </Row>
-            <Row className='punchintime' style={{paddingLeft: 10, paddingTop: 30, paddingBottom: 60}}>
-                <div >
-                    <p> Punch In at </p>
-                    <h6>Thursday, 29 Jun 2023 09:05 AM</h6>
-                </div>
-            </Row>
-             <Row>
-                <Col className='d-flex' style={{marginLeft: '28%'}}>
-                <Circularprogress/>
-                </Col>
-
-             </Row>
-         </Col>
+    <Row className='mx-2' style={{width: '100%',display: 'flex'}}>
+    <Col className='text-light bg-dark my-2' style={{ borderRadius: 8, marginRight: '1%' }}>
+          <div className="p-2 body-text">Timesheet</div>
+          <hr style={{ width: '93%', marginLeft: '2%' }} />
+          <div className='punchintime' style={{ paddingLeft: 10, paddingTop: 30, paddingBottom: 60 }}>
+            <p> Punch In at </p>
+            <h6>Thursday, 29 Jun 2023 09:05 AM</h6>
+          </div>
+          <Row>
+            <Col xs={12} className='d-flex justify-content-center'>
+              <Circularprogress />
+            </Col>
+          </Row>
+        </Col>
 
         {/* second col2 */}
          <Col className='text-light bg-dark my-2' style={{borderRadius: 8,marginRight: '1%'}}>
@@ -35,7 +29,7 @@ function TimesheetsBirthdaysUsers() {
 
              </Row>
              <Row className='d-flex'>
-                 <Container className='my-2' style={{width: 328,  height: 118, backgroundColor: '#0E0F12'}}>
+                 <Container className='my-2' style={{width: 300,  height: 118, backgroundColor: '#0E0F12'}}>
                      <p className='my-2' style={{ color: '#97C121' }}>Birthday Today</p>
                      <Row>
                      <hr style={{width: '97%', marginLeft:'1%' }}/>
@@ -59,7 +53,7 @@ function TimesheetsBirthdaysUsers() {
                      </Col>
                      </Row>
                  </Container>
-                 <Container className='my-4' style={{width: 328,  height: 118, backgroundColor: '#0E0F12'}}>
+                 <Container className='my-4' style={{width: 300,  height: 118, backgroundColor: '#0E0F12'}}>
                      <p className='my-2' style={{ color: '#97C121' }}>2 years Work Anniversary</p>
                      <Row>
                      <hr style={{width: '97%', marginLeft:'1%' }}/>
@@ -90,10 +84,9 @@ function TimesheetsBirthdaysUsers() {
         {/* second col3 */}
         <Col className='text-light bg-dark my-2' style={{borderRadius: 8}}>
              <Row>
-                 <Col><div className="p-2 body-text">Online Users</div></Col>
-                 <Col></Col>
+                 <Col><div className="p-1 body-text">Online Users</div></Col>
                  <Col>
-                 <Container className='my-2' style={{marginLeft: 30}}>
+                 <Container className='my-2 w-25' style={{marginLeft: '70%'}}>
                  <img
                      src="/Search2.png"
                      width="15"

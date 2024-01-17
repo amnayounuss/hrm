@@ -11,7 +11,7 @@ function AttendanceFlagSummary() {
   return (
     <>
     
-        <Row className="bg-body-tertiary text-light" data-bs-theme="dark" style={{width: '98%',display: 'flex', marginLeft: '1%'}}>
+        <Row className="bg-body-tertiary mx-2 text-light" data-bs-theme="dark" style={{width: '100%',display: 'flex'}}>
         <Row>
         <Navbar expand="lg mx-2 my-2">
             <Container fluid>
