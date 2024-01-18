@@ -20,50 +20,82 @@ function OnlineUsersData() {
             </Col>
                 <hr style={{width: '93%', marginLeft:'2%' }}/>
             </Row>
-            {/* USERS scrollbar scrollbar-primary */}
-            <Container className='' style={{ backgroundColor: '#0E0F12',  width: '328px', height: '307px' }}>
-            {records.onlineEmployeesData.map((event, index) => (
-                <Row className='d-flex ' key={index} >
-                <Row className='mx-2 my-1'>
-                <Col className='my-2 col-md-2 d-flex'>
-                    <div className="frontimage">
-                    <img src={event.employeeImage} alt="" />
-                    </div>
-                </Col>
-                <Col className='my-2 col-md-8 d-flex flex-column '>
-                    <p className='my-2' style={{ fontSize: '14px', lineHeight: '1px'}}>{event.name}</p>
-                    <p style={{ fontSize: '12px', color: 'grey' }}>{event.designation}</p>
-                </Col>
-                <Col className='col-md-2 d-flex '>
-                    <div className='online'></div>
-                </Col>
-                </Row>
-                </Row>
-            ))}
-            </Container>
-            {/* <Container className="" style={{backgroundColor: '#0E0F12', width: '328px', height: '307px'}}>
-            {records.onlineEmployeesData.map((event, index) => (
-            <div className='mx-3'>
+            {/* USERS scrollbar scrollbar-primary */}  
 
-            <Row className='d-flex' key={index}>
-                <Col className='col-md-2 my-3 d-flex' style={{marginTop: '6px', marginBottom: "6px"}} >
-                  <div className="frontimage">
-                    <img src={event.employeeImage} alt=""/>
-                  </div>                  
-                </Col>
-                <Col className='col-md-8 d-flex' style={{marginTop: '6px', marginBottom: "6px"}} >
-                    <span> <p className='my-2' style={{fontSize: '14px'}}> {event.name} </p>
-                    <p style={{fontSize: '12px', color: 'grey', lineHeight: '0px'}}> {event.designation} </p> </span>
-                </Col>
-                <Col className='col-md-2 d-flex' style={{marginTop: '6px', marginBottom: "6px"}}>
-                    <div className='online'></div>
-                </Col>
-                
+            <Container style={{ backgroundColor: '#0E0F12', width: '328px', height: '307px' }}>
+            <Row className='d-flex' style={{ height: '307px' }}>
+                {records.onlineEmployeesData.map((data, index) => (
+                <Row key={index} className='d-flex mx-3' style={{ width: '90%', height: '55px' }}>
+                    <Col className='frontimage col-md-3 my-2 d-flex'>
+                    <img src={data.employeeImage} alt="" />
+                    </Col>
+                    <Col className='col-md-7 d-flex'>
+                    <span>
+                        <p className='my-2' style={{ fontSize: '14px' }}>{data.name}</p>
+                        <p style={{ fontSize: '12px', color: 'grey', lineHeight: '0px' }}>{data.designation}</p>
+                    </span>
+                    </Col>
+                    <Col className='col-md-2 d-flex my-4'>
+                    <div className={data.online ? 'online' : 'offline'}></div>
+                    </Col>
+                </Row>
+                ))}
             </Row>
-            </div>
-
-             ))}
-             </Container> */}
+            </Container>
+            
+            {/* <Container  style={{backgroundColor: '#0E0F12', width: '328px', height: '307px'}}>
+            <Row className='d-flex ' style={{height: '307px'}}  > 
+                <Row className='d-flex mx-3' style={{width: '90%', height: '55px', marginTop: '30px'}}>
+                    <Col className='frontimage col-md-3 my-2  d-flex'  >
+                        <img src="/image2.jpg" alt=""/>
+                    </Col>
+                    <Col className='col-md-7 d-flex' >
+                        <span> <p className='my-2' style={{fontSize: '14px'}}> Ebad Ahmed</p>
+                        <p style={{fontSize: '12px', color: 'grey', lineHeight: '0px'}}> UX Designer </p> </span>
+                    </Col>
+                    <Col className='col-md-2 d-flex my-4' >
+                        <div className='online'></div>
+                    </Col>
+                </Row>
+                <Row className='d-flex mx-3' style={{width: '90%', height: '55px'}}>
+                    <Col className='frontimage col-md-3 my-2  d-flex'  >
+                        <img src="/image2.jpg" alt=""/>
+                    </Col>
+                    <Col className='col-md-7 d-flex' >
+                        <span> <p className='my-2' style={{fontSize: '14px'}}> Ebad Ahmed</p>
+                        <p style={{fontSize: '12px', color: 'grey', lineHeight: '0px'}}> UX Designer </p> </span>
+                    </Col>
+                    <Col className='col-md-2 d-flex my-4' >
+                        <div className='online'></div>
+                    </Col>
+                </Row>
+                <Row className='d-flex mx-3' style={{width: '90%', height: '55px'}}>
+                    <Col className='frontimage col-md-3 my-2  d-flex'  >
+                        <img src="/image2.jpg" alt=""/>
+                    </Col>
+                    <Col className='col-md-7 d-flex' >
+                        <span> <p className='my-2' style={{fontSize: '14px'}}> Ebad Ahmed</p>
+                        <p style={{fontSize: '12px', color: 'grey', lineHeight: '0px'}}> UX Designer </p> </span>
+                    </Col>
+                    <Col className='col-md-2 d-flex my-4' >
+                        <div className='online'></div>
+                    </Col>
+                </Row>
+                <Row className='d-flex mx-3' style={{width: '90%', height: '55px'}}>
+                    <Col className='frontimage col-md-3 my-2  d-flex'  >
+                        <img src="/image2.jpg" alt=""/>
+                    </Col>
+                    <Col className='col-md-7 d-flex' >
+                        <span> <p className='my-2' style={{fontSize: '14px'}}> Ebad Ahmed</p>
+                        <p style={{fontSize: '12px', color: 'grey', lineHeight: '0px'}}> UX Designer </p> </span>
+                    </Col>
+                    <Col className='col-md-2 d-flex my-4' >
+                        <div className='online'></div>
+                    </Col>
+                </Row>
+            </Row>
+            </Container> */}
+            
     </>
   )
 }

@@ -354,16 +354,18 @@
   text-align: center;
 }
 .scrollbar {
+  overflow-x: hidden;
   overflow-y: scroll;
-}
-.scrollbar-primary {
-  scrollbar-color: #A7A9AC #242930;
+  height: 30px!important;
+  
 }
 .scrollbar-primary::-webkit-scrollbar {
   width: 12px;
   background-color: #A7A9AC;
-  border-radius: 40px;
+  border-radius: 40px; 
 }
+
+
 .CircularProgressbar .CircularProgressbar-path{
     stroke: #97C121!important;
     background-color: #0E0F12!important;
@@ -373,5 +375,4 @@
     height: 8px;
     border-radius: 50%;
     background-color: #97C121;
-    margin-top: 80%;
 }
