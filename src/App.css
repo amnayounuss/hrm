@@ -337,14 +337,16 @@
     height: 40px!important;
     border-radius: 50%!important;
     position: absolute;
+    border: 2px solid grey;
 }
 .backimage img{
     width: 20px!important;
     height: 20px!important;
     position: relative  ;
     border-radius: 50%!important;
-    margin-top: 25px;
-    margin-left: 10%;
+    margin-top: 23px;
+    margin-left: 120%;
+    border: 2px solid #0E0F12;
 }
 .eventsbox{
   background-color: #242930;
@@ -365,4 +367,11 @@
 .CircularProgressbar .CircularProgressbar-path{
     stroke: #97C121!important;
     background-color: #0E0F12!important;
+}
+.online{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #97C121;
+    margin-top: 80%;
 }
