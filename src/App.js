@@ -6,7 +6,6 @@ import FrontPage from './components/FrontPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
-
 function App() {
   
   return (
@@ -15,7 +14,7 @@ function App() {
     <Routes>
     <Route index element = {<Login/>} />
     <Route path='/login' element = {<Login/>} />
-    <Route path='/dashboard' element = {<FrontPage/>} />  
+    <Route path='/dashboard' element = {<FrontPage/>} />
     </Routes>
     </BrowserRouter>
     </>

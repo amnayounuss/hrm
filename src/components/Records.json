@@ -324,5 +324,25 @@
       "username": "test",
       "password": "test@123"
     }
+  ],
+  "eventsData":[
+    {
+      "type": "Birthday Today",
+      "employeeImage": "/image2.jpg",
+      "eventImage": "/birthday-cake.png",
+      "name" : "Mira Lubin",
+      "designation": "UX Designer",
+      "date": "10",
+      "month": "October"
+    },
+    {
+      "type": "2 years Work Anniversary",
+      "employeeImage": "/image2.jpg",
+      "eventImage": "/workanniversary.png",
+      "name" : "Mira Lubin",
+      "designation": "UX Designer",
+      "date": "10",
+      "month": "October"
+    }
   ]
 }

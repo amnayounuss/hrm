@@ -348,7 +348,7 @@
 }
 .eventsbox{
   background-color: #242930;
-  margin-top: -5px;
+  /* margin-top: -5px; */
   text-align: center;
 }
 .scrollbar {

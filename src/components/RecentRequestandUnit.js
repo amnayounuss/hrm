@@ -91,7 +91,7 @@ function RecentRequestandUnit() {
               <PieChart/>
             </Col>
           </Row>
-          <hr style={{ width: '100%', marginLeft: '0', marginTop: '35px' }} />
+          <hr style={{ width: '100%', marginLeft: '0', marginTop: '25px' }} />
 
           <Row className='my-2'>
             <div className="text-center">
