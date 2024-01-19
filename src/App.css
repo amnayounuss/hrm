@@ -356,7 +356,7 @@
 .scrollbar {
   overflow-x: hidden;
   overflow-y: scroll;
-  height: 30px!important;
+  /* height: 30px!important; */
   
 }
 .scrollbar-primary::-webkit-scrollbar {
@@ -376,3 +376,28 @@
     border-radius: 50%;
     background-color: #97C121;
 }
+
+
+/* ss */
+.toggle-btn {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .NavItem-row {
+    margin-bottom: 10px;
+  }
+  
+  .expanded {
+    transition: width 0.3s ease;
+  }
+  
+  .collapsed .toggle-btn {
+    width: 64px;
+    overflow: hidden;
+  }
+  
+  .collapsed .toggle-btn img {
+    width: 100%;
+  }

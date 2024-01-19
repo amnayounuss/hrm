@@ -1,8 +1,18 @@
 import React from 'react';
 import { Sidenav, Nav } from 'rsuite';
+import { Row,Col } from 'react-bootstrap';
+import SidenavHeader from 'rsuite/esm/Sidenav/SidenavHeader';
 
 export const SideNav = () => {
+  const navlogoStyle  = {
+    width: '132px',
+    height: '25px'
+  };
   const navItemStyle = {
+    color: 'grey',     // Set font color to white
+    textDecoration: 'none',  // Remove underline
+  };
+  const navHeadStyle = {
     color: 'white',     // Set font color to white
     textDecoration: 'none',  // Remove underline
   };
@@ -10,29 +20,165 @@ export const SideNav = () => {
   return (
     <div className="bg-body-tertiary justify-content-between d-flex" data-bs-theme="dark" style={{ width: 200 }}>
       <Sidenav defaultOpenKeys={['3', '4']}>
+      <SidenavHeader>
+      <Nav>
+      <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item>  <img style={navlogoStyle} src="/logo-Footer.png" alt="" /> </Nav.Item>
+              </Col>
+              
+            </Row>
+            </Nav>
+      </SidenavHeader>
         <Sidenav.Body>
           <Nav>
-            <Nav.Item eventKey="1" style={navItemStyle}>
-              Dashboard
-            </Nav.Item>
-            <Nav.Item eventKey="2" style={navItemStyle}>
-              User Group
-            </Nav.Item>
-            <Nav.Menu placement="rightStart" eventKey="3" >
-              <Nav.Item eventKey="3-1" style={navItemStyle}>Geo</Nav.Item>
-              <Nav.Item eventKey="3-2" style={navItemStyle}>Devices</Nav.Item>
-              <Nav.Item eventKey="3-3" style={navItemStyle}>Loyalty</Nav.Item>
-              <Nav.Item eventKey="3-4" style={navItemStyle}>Visit Depth</Nav.Item>
-            </Nav.Menu>
-            <Nav.Menu placement="rightStart" eventKey="4" title="Settings">
-              <Nav.Item eventKey="4-1" style={navItemStyle}>Applications</Nav.Item>
-              <Nav.Item eventKey="4-2" style={navItemStyle}>Channels</Nav.Item>
-              <Nav.Item eventKey="4-3" style={navItemStyle}>Versions</Nav.Item>
-              <Nav.Menu eventKey="4-5" title="Custom Action">
-                <Nav.Item eventKey="4-5-1" style={navItemStyle}>Action Name</Nav.Item>
-                <Nav.Item eventKey="4-5-2" style={navItemStyle}>Action Params</Nav.Item>
-              </Nav.Menu>
-            </Nav.Menu>
+          <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/dashboardIcon.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navHeadStyle}>Dashboard</Nav.Item>
+              </Col>
+            </Row>
+          
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+            <Row className='my-3 d-flex'>
+              <Col className='col-md-2'>
+              <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
+              </Col>
+              <Col>
+              <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+              </Col>
+            </Row>
+
+            
           </Nav>
         </Sidenav.Body>
       </Sidenav>
