@@ -54,7 +54,7 @@ export function TopNav() {
                 />
           </Col>
           <Col xs="auto">
-          <NavDropdown id="basic-nav-dropdown d-flex">
+          <NavDropdown  id="basic-nav-dropdown d-flex" >
               <Container>
               <NavDropdown.Item href="#action/3.1" onClick={handleLogout}>LogOut</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

@@ -8,19 +8,21 @@ import RecentRequestandUnit from './RecentRequestandUnit';
 import TimesheetsBirthdaysUsers from './TimesheetsBirthdaysUsers';
 
 
+
 function FrontPage() {
   return (
     <>
-    <TopNav/>
     <Row style={{width: '100%'}}>
-    <SideNav/>  
-
-        <Col >
-        <AttendanceCards/>
-        <AttendanceFlagSummary/>
-        <RecentRequestandUnit/>
-        <TimesheetsBirthdaysUsers/>
-        </Col>
+    <Col className='col-md-2'>
+      <SideNav/>
+    </Col>
+    <Col className='col-md-10' >
+      <TopNav/>
+      <AttendanceCards/>
+      <AttendanceFlagSummary/>
+      <RecentRequestandUnit/>
+      <TimesheetsBirthdaysUsers/>
+    </Col>
     </Row>
 
     </>

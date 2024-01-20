@@ -7,7 +7,7 @@ function MonthlyAttendanceCards () {
     const cards = records.monthlyAttendanceCards.map((card, index) => (
             <Card 
             key={index}
-             className='attendancecard cardrow' style={{marginLeft: '-4px'}}>
+             className='attendancecard cardrow' style={{marginLeft: '-5px'}}>
             <Card.Body className='cardbg purple' >
                 <Card.Text className='cardbg'  >
                 {card.date}

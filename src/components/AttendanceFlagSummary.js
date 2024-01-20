@@ -90,7 +90,7 @@ function AttendanceFlagSummary() {
             </Navbar>
             
         </Row>
-        <Row className='mx-2 d-flex' >
+        <Row className='mx-3 d-flex' >
             <MonthlyAttendanceCards/>
         </Row>
         </Row>
