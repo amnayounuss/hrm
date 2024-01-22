@@ -6,7 +6,7 @@ function AttendanceCards() {
   
   return (   
     <>
-      <Row >
+      {/* <Row > */}
         <CardGroup>
           {records.attendanceCards.map((attendanceCards, index) => (
             <Card 
@@ -20,7 +20,7 @@ function AttendanceCards() {
             </Card>
           ))}
         </CardGroup>
-      </Row>
+      {/* </Row> */}
     </>
     
     

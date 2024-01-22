@@ -20,8 +20,8 @@ function MonthlyAttendanceCards () {
   return (
     <>
 
-    <div className="container mt-4">
-      <div  className="row ">{cards}</div>
+    <div className="container mt-3">
+      <div  className="row mx-1 ">{cards}</div>
     </div>
     
     {/* <Row className='mx-2 '>

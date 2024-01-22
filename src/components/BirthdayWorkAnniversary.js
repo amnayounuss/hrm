@@ -13,7 +13,10 @@ export default function BirthdayWorkAnniversary() {
             </Row>
              {/* inner section */}
             {records.eventsData.map((event, index) => (
-            <Row className='d-flex' key={index}>
+            <Row 
+            className='mx-1'
+            key={index} 
+            style={{ width: '99%'}}>
             <Container className='my-2' style={{width: 328,  height: 118, backgroundColor: '#0E0F12'}}>
                 <Row>
                   <p className='my-2' style={{ color: '#97C121' }}>{event.type}</p>

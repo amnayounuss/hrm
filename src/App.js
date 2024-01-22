@@ -1,9 +1,11 @@
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-import Login from './components/Login';
-import FrontPage from './components/FrontPage';
+// import Login from './Pages/Login';
+// import FrontPage from './Pages/FrontPage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Login from './Pages/Login';
+import FrontPage from './Pages/FrontPage';
 
 
 function App() {

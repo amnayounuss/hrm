@@ -17,9 +17,9 @@ export function TopNav() {
 
   return (
     <>
-    <Navbar className="bg-body-tertiary justify-content-between nav d-flex" data-bs-theme="dark" style={{width: '100%'}}>
-      <Container fluid style={{width: '94%', marginLeft: '3%'}}>
-        <InputGroup fluid style={{marginLeft: '-3%'}}>
+    <Navbar className="bg-body-tertiary nav" data-bs-theme="dark" style={{width: '102%', marginLeft: '-2%'}}>
+      <Container fluid style={{marginLeft: '1%'}}>
+        <InputGroup fluid >
           <InputGroup.Text id="basic-addon1">
           <img
               src="/Search.png"

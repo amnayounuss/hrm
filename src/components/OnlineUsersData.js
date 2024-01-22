@@ -22,10 +22,10 @@ function OnlineUsersData() {
             </Row>
             {/* USERS scrollbar scrollbar-primary */}  
 
-            <Container style={{ backgroundColor: '#0E0F12', width: '328px', height: '307px' }}>
-            <Row className='d-flex' style={{ height: '307px' }}>
+            <Container style={{ backgroundColor: '#0E0F12', width: '99%', height: '307px' }}>
+            <Row style={{ height: '307px'}}>
                 {records.onlineEmployeesData.map((data, index) => (
-                <Row key={index} className='d-flex mx-3' style={{ width: '90%', height: '55px' }}>
+                <Row key={index} className='mx-3' style={{ width: '90%', height: '55px' }}>
                     <Col className='frontimage col-md-3 my-2 d-flex'>
                     <img src={data.employeeImage} alt="" />
                     </Col>

@@ -8,10 +8,10 @@ import BirthdayWorkAnniversary from './BirthdayWorkAnniversary';
 function TimesheetsBirthdaysUsers() {
   return (
     <>
-    <Row className='mx-2' style={{width: '100%',display: 'flex'}}>
+    <Row className='mx-2' >
     
     {/* second col1 */}
-    <Col className='text-light bg-dark my-2' style={{ borderRadius: 8, marginRight: '1%' }}>
+    <Col className='text-light bg-dark my-2 flex-wrap' style={{ borderRadius: 8, marginRight: '1%' }}>
       <div className="p-2 body-text">Timesheet</div>
       <Row>
         <hr style={{ width: '93%', marginLeft: '2%' }} />

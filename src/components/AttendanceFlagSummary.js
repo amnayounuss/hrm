@@ -11,9 +11,9 @@ function AttendanceFlagSummary() {
   return (
     <>
     
-        <Row className="bg-body-tertiary mx-2 text-light" data-bs-theme="dark" style={{width: '100%',display: 'flex'}}>
+        <Row className="bg-body-tertiary mx-2 text-light" data-bs-theme="dark" >
         <Row>
-        <Navbar expand="lg mx-2 my-2">
+        <Navbar expand="lg mx-2 my-2 flex-wrap">
             <Container fluid>
                 <Navbar.Brand href="#" style={{fontSize: '14px'}}>Attendance Flag Summary</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -43,7 +43,7 @@ function AttendanceFlagSummary() {
         </Navbar>
     <hr style={{width: '1071%', marginLeft:'1%' }}/>  
         </Row>
-        <Row style={{width: '95%', marginLeft: '0%'}}>
+        <Row className='flex-wrap' style={{width: '95%', marginLeft: '0%'}}>
         <Stack direction="horizontal" className="bg-body-tertiary nav mx-2 my-2" gap={2}> 
         {
             record.attendancebadgeData.map((badge, index) => (
@@ -63,7 +63,7 @@ function AttendanceFlagSummary() {
 
 
 
-        <Row className='d-flex mx-0'>
+        <Row className='d-flex mx-0 flex-wrap'>
             <Navbar className="justify-content-between nav">
                 <Form inline className='my-3 d-flex'>
                 <span className='mx-2'> Start of pay: <span className='fw-bold'>{record.startpay.text}</span> </span>
@@ -90,7 +90,7 @@ function AttendanceFlagSummary() {
             </Navbar>
             
         </Row>
-        <Row className='mx-3 d-flex' >
+        <Row className='mx-1 d-flex' >
             <MonthlyAttendanceCards/>
         </Row>
         </Row>

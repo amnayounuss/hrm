@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Badge, Stack, Row } from 'react-bootstrap';
+import { Col,Container, Badge, Stack, Row } from 'react-bootstrap';
 import PieChart from './PieChart';
 import records from './Records.json';
 
@@ -7,15 +7,16 @@ function RecentRequestandUnit() {
 
   return (
     <>
-    <Row className='mx-2' style={{width: '100%',display: 'flex'}}>
+    <Row className='mx-2'>
         <Col className='text-light bg-dark my-2' style={{ borderRadius: 8, marginRight: '1%' }}>
           <div className="p-2 mx-2 my-1 body-text">Recent Requests</div>
           <hr style={{ width: '100%', marginLeft: '0' }} />
+          <Container >
 
           {records.request.map((request, index) => (
             <React.Fragment key={index}>
-              <Row className='d-flex' style={{ width: '100%' }}>
-                <Stack className="fw-lighter small" direction="horizontal">
+              <Row>
+                <Stack className="fw-lighter small flex-wrap" direction="horizontal">
                   <div className="p-1 d-flex">
                     {request.code} <br />
                     {request.name} <br />
@@ -33,10 +34,11 @@ function RecentRequestandUnit() {
                     <img src={request.crossimage} alt="" />
                   </div>
                 </Stack>
-                <hr style={{ width: '100%', marginLeft: '10px' }} />
+                <hr style={{ width: '98%', marginLeft: '10px' }} />
               </Row>
             </React.Fragment>
           ))}
+          </Container>
           <Row>
             <div className="text-center card-subtitle-1 my-2">View All</div>
           </Row>
@@ -47,7 +49,7 @@ function RecentRequestandUnit() {
           <div className="p-2 mx-2 my-1 body-text">Today's Unit Strength</div>
           <hr style={{ width: '100%', marginLeft: '0' }} />
 
-          <Row>
+          <Row className='flex-wrap'>
             <Col>
               <Row className='mx-2'>
                 <Col className='my-2'>
