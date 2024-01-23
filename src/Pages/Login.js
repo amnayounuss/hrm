@@ -15,9 +15,12 @@ function Login() {
 
 
   useEffect(() => {
-    const isLoggedIn = cookies.isLoggedIn;
-    if (isLoggedIn === 'true') {
+    const isLoggedIn = cookies.isLoggedIn === 'true';
+
+    if (isLoggedIn) {
       navigate('/dashboard');
+    } else {
+      navigate('/login');
     }
   }, [cookies, navigate]);
   
@@ -39,14 +42,14 @@ function Login() {
           toast.success('Login successful');
 
           // Set cookies
-          setCookie('isLoggedIn', 'true', { path: '/' });
-          setCookie('username', username, { path: '/' });
+          setCookie('isLoggedIn', true , { path: '/dashboard' });
+          setCookie('username', username, { path: '/dashboard' });
 
-          sessionStorage.setItem('Is Login True', isValidUser);
+          sessionStorage.setItem('isLoggedIn', isValidUser);
           sessionStorage.getItem(isValidUser);
 
 
-          localStorage.setItem('Is Login True', isValidUser);
+          localStorage.setItem('isLoggedIn', isValidUser);
           localStorage.getItem(isValidUser);
 
           // Redirect to dashboard
@@ -76,12 +79,12 @@ function Login() {
   };
   return (
     <>
-      <Row className="d-flex" data-bs-theme="dark" style={{width: '100%'}}>
-        <Col className='bg-body-tertiary left col-md-7' data-bs-theme="dark">
+      <Row data-bs-theme="flex-wrap dark" style={{width: '100%'}}>
+        <Col className='flex-wrap bg-body-tertiary left col-md-7' data-bs-theme="dark">
           <img className='logoicon' src="./logoicon.png" alt="Logo Icon" />
-          <Row className='h1 text-light mx-5 p-3'> Crystallite Attendance <br /> Management System</Row>
+          <Row className='flex-wrap h1 text-light mx-5 p-3'> Crystallite Attendance <br /> Management System</Row>
           <Row style={{width: '99%'}}>
-          <Row className='col-md-6 my-5 h-25'>
+          <Row className='flex-wrap col-md-6 my-5 h-25'>
           <div className='data'>
               <div className='circle'></div>
               <p>Time and attendance tracking</p>
@@ -99,25 +102,25 @@ function Login() {
               <p>Reporting and analytics</p>
             </div>
           </Row>
-          <Row className='col-md-6 d-flex'>
+          <Row className='flex-wrap col-md-6 d-flex'>
             <div className='heximg' >
                 <img src="image.png" alt='' />
             </div>
             
           </Row>
-          <div className='copyright'>
+          <div className='flex-wrap copyright'>
               <p>Copyright &copy; - Crystal-lite. All Rights Reserved. 2023</p>
             </div>
             
           </Row>
 
         </Col>
-        <Col className='right col-md-5'>
+        <Col className='flex-wrap right col-md-5'>
           <img className='logomark' src="./logo-Footer.png" alt="Logo Mark" />
           <h4>Login to your account</h4>
           <p>Start managing your finance faster and better</p>
 
-          <div className="container px-5 py-5">
+          <div className="flex-wrap container px-5 py-5">
             <div className="form-box">
               <div className="header-form">
                 <div className="image"></div>
