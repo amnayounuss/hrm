@@ -2,8 +2,19 @@ import React from 'react';
 import { Sidenav, Nav } from 'rsuite';
 import { Row,Col } from 'react-bootstrap';
 import SidenavHeader from 'rsuite/esm/Sidenav/SidenavHeader';
+import { useNavigate } from 'react-router-dom';
+
 
 export const SideNav = () => {
+  const navigate = useNavigate();
+
+
+  const handleEmployees = ()=>{
+    navigate('/employees');
+  };
+  const handleDashboard = ()=>{
+    navigate('/dashboard');
+  };
 
   
   const navlogoStyle  = {
@@ -41,7 +52,7 @@ export const SideNav = () => {
           <Nav.Item> <img src="/dashboardIcon.png"  alt="" /> </Nav.Item>
         </Col>
         <Col xs={10} md={10}>
-          <Nav.Item style={navHeadStyle}>Dashboard</Nav.Item>
+          <Nav.Item style={navHeadStyle} onClick={handleDashboard}>Dashboard</Nav.Item>
         </Col>
         </Row>
         <Row className='my-3 flex-wrap'>
@@ -49,7 +60,7 @@ export const SideNav = () => {
           <Nav.Item> <img src="/sidenavuser.png"  alt="" /> </Nav.Item>
         </Col>
         <Col xs={10} md={10}>
-          <Nav.Item style={navItemStyle}>Empoyees</Nav.Item>
+          <Nav.Item style={navItemStyle} onClick={handleEmployees}>Empoyees</Nav.Item>
         </Col>
         </Row>
         <Row className='my-3' >

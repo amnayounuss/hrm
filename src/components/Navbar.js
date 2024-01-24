@@ -3,9 +3,6 @@ import { Navbar, Container, NavDropdown, Form, Row, Col, InputGroup } from 'reac
 import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 
-
-
- 
 export function TopNav() {
   const navigate = useNavigate();
   const [cookies, setCookie] = useCookies(['isLoggedIn', 'username']);
