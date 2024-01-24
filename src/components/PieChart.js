@@ -38,7 +38,7 @@ export default function PieChart() {
   }, []);
 
   return (
-    <div style={{ width: '187px', height: '187px', marginLeft: '20%'}}>
+    <div style={{ width: '187px', height: '187px', marginLeft: '15%'}}>
       <canvas ref={chartRef} />
     </div>
   );

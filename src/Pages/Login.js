@@ -10,6 +10,7 @@ import { useCookies } from 'react-cookie';
 function Login() {
   const [username, usernameupdate] = useState('');
   const [password, passwordupdate] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [cookies, setCookie] = useCookies(['isLoggedIn', 'username']);
 
@@ -17,12 +18,16 @@ function Login() {
   useEffect(() => {
     const isLoggedIn = cookies.isLoggedIn === 'true';
 
-    if (isLoggedIn) {
-      navigate('/dashboard');
-    } else {
+    if (!isLoggedIn) {
       navigate('/login');
+    } else {
+      navigate('/dashboard');
     }
   }, [cookies, navigate]);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   
 
   const ProceedLogin = async (e) => {
@@ -42,8 +47,8 @@ function Login() {
           toast.success('Login successful');
 
           // Set cookies
-          setCookie('isLoggedIn', true , { path: '/dashboard' });
-          setCookie('username', username, { path: '/dashboard' });
+          setCookie('isLoggedIn', true , { path: '/' });
+          setCookie('username', username, { path: '/' });
 
           sessionStorage.setItem('isLoggedIn', isValidUser);
           sessionStorage.getItem(isValidUser);
@@ -139,8 +144,7 @@ function Login() {
                         onChange={(e) => usernameupdate(e.target.value)}
                         type="text"
                         className="username-content text-white"
-                        placeholder="User name"
-                        
+                        placeholder="User name" 
                       />
                     </div>
                   </Row>
@@ -148,14 +152,25 @@ function Login() {
                     <div className="d-flex my-3">
                       <div className="input-group-prepend">
                         <span className="user"><i className="fa fa-lock"></i></span>
+                        
                       </div>
                       <input
                         value={password}
                         onChange={(e) => passwordupdate(e.target.value)}
-                        type="password"
+                        type={showPassword ? "text" : "password"}
                         className="username-content text-white"
                         placeholder="Password"
                       />
+                      <div className="eye">
+                      <img 
+                          style={{width: '20px', height: '16px', cursor: 'pointer' }}
+                          src="/eye.png"
+                          alt=""
+                          onClick={togglePasswordVisibility}
+                          
+                        />
+                      </div>
+                      
                     </div>
                   </Row>
                   <Form.Group className="message my-3 mb-4" controlId="formBasicCheckbox">

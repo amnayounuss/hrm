@@ -24,7 +24,7 @@ export const SideNav = () => {
       <Sidenav >
 
       <SidenavHeader>
-      <Nav>
+      <Nav className='d-flex flex-wrap'>
       <Row className='my-3 w-100 p-3'>
       <Col className='col-md-2'>
         <Nav.Item>  <img style={navlogoStyle} src="/logo-Footer.png" alt="" /> </Nav.Item>
@@ -33,8 +33,8 @@ export const SideNav = () => {
       </Nav>
       </SidenavHeader>
 
-      <Sidenav.Body className='d-flex ' >
-      <Nav>
+      <Sidenav.Body className='d-flex flex-wrap' >
+        <Nav>
         <Row className='my-3 flex-wrap'>
          <Col xs={2} md={2}>
           <Nav.Item> <img src="/dashboardIcon.png"  alt="" /> </Nav.Item>

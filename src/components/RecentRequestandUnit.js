@@ -49,7 +49,7 @@ function RecentRequestandUnit() {
           <div className="p-2 mx-2 my-1 body-text">Today's Unit Strength</div>
           <hr style={{ width: '100%', marginLeft: '0' }} />
 
-          <Row className='flex-wrap'>
+          <Row >
             <Col>
               <Row className='mx-2'>
                 <Col className='my-2'>
@@ -63,18 +63,18 @@ function RecentRequestandUnit() {
                 </Col>
               </Row>
 
-              <Stack className="mx-2" data-bs-theme="dark" direction="horizontal" style={{ width: '100%', marginTop: '30px' }} gap={2}>
+              <Stack className="mx-2 flex-wrap" data-bs-theme="dark" direction="horizontal" style={{ width: '100%', marginTop: '30px' }} gap={2}>
                   {records.stackData.slice(0, 2).map((stack, index) => (
                     <React.Fragment key={index}>
                       <Badge className={`${stack.className} my-2`} bg="">
                         {' '}
                       </Badge>
-                      <span className='mx-2'>{`${stack.count} ${stack.label} `}</span>
+                      <span className='mx-1'>{`${stack.count} ${stack.label} `}</span>
                     </React.Fragment>
                   ))}
                 </Stack>
 
-                <Stack className="mx-2" data-bs-theme="dark" direction="horizontal" style={{ width: '100%' }} gap={2}>
+                <Stack className="mx-2 flex-wrap" data-bs-theme="dark" direction="horizontal" style={{ width: '100%' }} gap={2}>
                   {records.stackData.slice(2).map((stack, index) => (
                     <React.Fragment key={index}>
                       <Badge className={`${stack.className} my-2`} bg="">
@@ -97,17 +97,17 @@ function RecentRequestandUnit() {
 
           <Row className='my-2'>
             <div className="text-center">
-              <Row>
-                <Col></Col>
-                <Col></Col>
-                <Col>
-                  <img src={records.leftbutton.img} width="34" height="34.89" alt="" />
+              <Row className='w-50' style={{marginLeft: '25%'}}>
+                {/* <Col></Col>
+                <Col></Col> */}
+                <Col >
+                  <img src={records.leftbutton.img} width="23.71px" height="23.71px" alt="" />
                 </Col>
-                <Col>
-                  <img src={records.righbutton.img} width="34" height="34.89" alt="" />
+                <Col >
+                  <img src={records.righbutton.img} width="23.71px" height="23.71px" alt="" />
                 </Col>
-                <Col></Col>
-                <Col></Col>
+                {/* <Col></Col>
+                <Col></Col> */}
               </Row>
             </div>
           </Row>
