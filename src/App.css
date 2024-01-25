@@ -413,3 +413,9 @@
     margin-left: 0 !important;
     transition: margin-left 0.3s ease-out;
   }
+.employeeimage img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    position:  relative;
+}

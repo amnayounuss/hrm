@@ -2,6 +2,7 @@ import React from 'react';
 import TopNav from '../components/Navbar';
 import { Row, Col } from 'react-bootstrap';
 import { SideNav } from '../components/SideNav';
+import EmployeesData from '../components/EmployeesData';
 
 
 function FrontPage() {
@@ -13,10 +14,7 @@ function FrontPage() {
           </Col>
           <Col xs={12} md={10} style={{ padding: 0 }}>
             <TopNav />
-            {/* <AttendanceCards />
-            <AttendanceFlagSummary />
-            <RecentRequestandUnit />
-            <TimesheetsBirthdaysUsers /> */}
+            <EmployeesData/>
           </Col>
       </Row>
     </>
