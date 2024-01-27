@@ -370,5 +370,68 @@
       "designation": "UX Designer",
       "online": "online"
     }
+  ],
+  "employeePageData":
+  [
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    },
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    },
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    },
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    },
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    },
+    {
+      "img": "/image2.jpg",
+      "employeeCode": "(88431)",
+      "name" : "Nolan Kenter",
+      "department": "Mobile App",
+      "designationTitle": "Head of Department",
+      "designation": "(H.O.D)",
+      "email": "chrisjohn@crystal-lite.com",
+      "phoneNo": "+92 325 6654800"    
+    }
   ]
 }

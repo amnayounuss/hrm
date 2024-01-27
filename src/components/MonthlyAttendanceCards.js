@@ -24,17 +24,7 @@ function MonthlyAttendanceCards () {
       <div  className="row mx-1 ">{cards}</div>
     </div>
     
-    {/* <Row className='mx-2 '>
-    <Card className='my-3 attendancecard cardrow'>
-        <Card.Body className='cardbg purple' >
-            <Card.Text className='cardbg'  >
-            {records.monthlyAttendanceCards.date}
-            </Card.Text>
-        </Card.Body>
-        <p className='cardpara' >{records.monthlyAttendanceCards.day}</p>
-    </Card>
-    </Row>
-     */}
+   
     </>
   );
 }

@@ -388,34 +388,12 @@
     border-radius: 50%;
     background-color: #97C121;
 }
-
-
-/* ss */
-.toggle-btn {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateX(0);
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    z-index: 999;
-  }
-  
-  .toggle-btn.collapsed {
-    transform: translateX(100%);
-  }
-  
-  .bg-body-tertiary.collapsed {
-    margin-left: 0 !important;
-    transition: margin-left 0.3s ease-out;
-  }
 .employeeimage img{
     width: 46px;
     height: 46px;
     border-radius: 50%;
     position:  relative;
+}
+.input-group>.form-control search{
+    background-color: red!important;
 }

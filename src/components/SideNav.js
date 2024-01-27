@@ -48,7 +48,7 @@ export const SideNav = () => {
         <Nav>
         
         <Row className='my-3 flex-wrap'>
-         <Col xs={2} md={2}>
+         <Col xs={2} lg={2} md={2}>
           <Nav.Item> <img src="/dashboardIcon.png"  alt="" /> </Nav.Item>
         </Col>
         <Col xs={10} md={10}>
