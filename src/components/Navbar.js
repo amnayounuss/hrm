@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Navbar, Container, NavDropdown, Form, Row, Col, InputGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
@@ -6,18 +6,16 @@ import { useCookies } from 'react-cookie';
 export function TopNav() {
   const navigate = useNavigate();
   const [cookies, setCookie] = useCookies(['isLoggedIn', 'username']);
+useEffect(() => {
+  if(sessionStorage.getItem('isLoggedIn')==='false'){
+    navigate('/login');
+  }
+}, [])
 
 
   const handleLogout = async function (){
-    setCookie('isLoggedIn', 'false', { path: '/dashboard' });
-
 
     sessionStorage.setItem('isLoggedIn', 'false');
-    // sessionStorage.removeItem('isLoggedIn');
-
-    localStorage.setItem('isLoggedIn', 'false');
-    // localStorage.removeItem('isLoggedIn');
-
 
     navigate('/login');
   };

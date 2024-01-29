@@ -42,25 +42,24 @@ function EmployeesData() {
                   </Dropdown.Menu>
                   </Dropdown>                
                 </Col>
-                <InputGroup className='d-flex search' > 
+                <Row className='d-flex search' style={{width: '200px'}}> 
                 <Col xs="auto">
                 <Form.Control
-                            placeholder="Search"
-                            aria-label="Search"
-                            aria-describedby="basic-addon1"
-                            type="search"
-                        />
-                        </Col>
-                        
-                        <InputGroup.Text id="basic-addon1">
-                            <img
-                            src="/Search.png"
-                            width="15"
-                            height="15"
-                            className="align-top d-flex"
-                            />
-                        </InputGroup.Text>
-                </InputGroup>
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon1"
+                  type="search"
+                />
+                </Col>
+                <Col id="basic-addon1">
+                  <img
+                  src="/Search.png"
+                  width="15"
+                  height="15"
+                  className="align-top d-flex"
+                  />
+                </Col>
+                </Row>
                     <Button className='mx-3 d-flex body-text' type="submit">+ Add Employee</Button>
                 </Form>
                 </Navbar.Collapse>
@@ -70,6 +69,7 @@ function EmployeesData() {
 
 
     <Row className='mx-3' style={{height: '100vh'}}>
+
     <Container className="d-flex bg-body-tertiary" data-bs-theme="dark" style={{height: '550px'}} >
     <Row className='my-3'>
       <Row className="text-white align-items-center" style={{fontSize: '12px', width: '98%', height: '48px', backgroundColor: '#0E0F12', marginLeft: '2%' }}>

@@ -16,14 +16,14 @@ function Login() {
 
 
   useEffect(() => {
-    const isLoggedIn = cookies.isLoggedIn === 'true';
+    const isLoggedIn = sessionStorage.getItem('isLoggedIn');
 
-    if (!isLoggedIn) {
+    if (isLoggedIn === 'false') {
       navigate('/login');
     } else {
       navigate('/dashboard');
     }
-  }, [cookies, navigate]);
+  }, [navigate]);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -45,18 +45,7 @@ function Login() {
         if (isValidUser) {
           console.log('Login successful');
           toast.success('Login successful');
-
-          // Set cookies
-          setCookie('isLoggedIn', true , { path: '/' });
-          setCookie('username', username, { path: '/' });
-
           sessionStorage.setItem('isLoggedIn', isValidUser);
-          sessionStorage.getItem(isValidUser);
-
-
-          localStorage.setItem('isLoggedIn', isValidUser);
-          localStorage.getItem(isValidUser);
-
           // Redirect to dashboard
           navigate('/dashboard');
         } else {
